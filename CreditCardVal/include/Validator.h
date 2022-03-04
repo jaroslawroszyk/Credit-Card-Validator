@@ -21,4 +21,4 @@ private:
     cardExpiryDate validThru;
     std::string holder;
     int cvc;
-};
+}
