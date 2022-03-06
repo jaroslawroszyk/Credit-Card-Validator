@@ -30,6 +30,7 @@ private:
     std::string holder;
     int cvc;
 };
+
 //function type type() return std::string
 /*
  * bool checkLuhn(const std::string& cardNo) {
