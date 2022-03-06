@@ -20,8 +20,8 @@ TEST_P(LeapYearParameterTestFixture, ChecksIfLeapYear)
 {
     bool expected = std::get<1>(GetParam());
     auto year = std::get<0>(GetParam());
-    CardDetails obj;
-    ASSERT_EQ(expected, obj.isLeapYear(year));
+    CardDetails sut;
+    ASSERT_EQ(expected, sut.isLeapYear(year));
 }
 
 INSTANTIATE_TEST_SUITE_P(
@@ -35,4 +35,3 @@ INSTANTIATE_TEST_SUITE_P(
                 std::make_tuple(2012, true),
                 std::make_tuple(2015, false),
                 std::make_tuple(2020, true)));
-
