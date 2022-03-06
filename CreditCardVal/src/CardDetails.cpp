@@ -1,6 +1,12 @@
 #include "CardDetails.h"
 #include <iostream>
 
+
+
+//CardDetails::CardDetails(int day, int month, int year)
+//        :day(day), month(month), year(year)
+//{ }
+
 //bool CardDetails::isValidDate(CardDetails* validCard);
 bool CardDetails::isLeapYear(int year)
 {

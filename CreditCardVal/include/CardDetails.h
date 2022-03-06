@@ -2,13 +2,26 @@
 
 #include <string>
 
-struct CardDetails
+enum class CardType
+{
+    Mastercard,
+    Bankcard,
+    Visa,
+    AmericanExpress,
+    LaunchPass,
+};
+
+class CardDetails
 {
 public:
+//    CardDetails(int day, int month, int year);
+
+//    CardDetails();
+
+    static bool isLeapYear(int year);
+
+private:
+    int day;
     int month;
     int year;
-    int day;
-
-    bool isValidDate(CardDetails* validCard);
-    bool isLeapYear(int year);
 };
