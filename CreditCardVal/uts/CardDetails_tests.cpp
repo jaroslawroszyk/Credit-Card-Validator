@@ -35,4 +35,3 @@ INSTANTIATE_TEST_SUITE_P(
                 std::make_tuple(2012, true),
                 std::make_tuple(2015, false),
                 std::make_tuple(2020, true)));
-
