@@ -9,14 +9,18 @@ namespace
 
 Date::Date(int day,int month,int year) : day(day),month(month),year(year){}
 
+bool Date::dependenciesValid() const
+{ return (year > MAX_YEAR || year < MIN_YEAR) and (month < 1 || month > 12) and (day < 1 || day > 31); }
+
+
 bool Date::isValid() const
 {
-    if (year>MAX_YEAR ||year<MIN_YEAR)
+    if (dependenciesValid())
         return false;
-    if (month<1 || month>12)
-        return false;
-    if (day<1 ||day>31)
-        return false;
+//    if (month<1 || month>12)
+//        return false;
+//    if (day<1 ||day>31)
+//        return false;
 
     if (month==2)
     {
@@ -31,3 +35,4 @@ bool Date::isValid() const
 
     return true;
 }
+

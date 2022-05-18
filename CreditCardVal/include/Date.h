@@ -7,4 +7,6 @@ struct Date
     int month;
     int year;
     bool isValid() const;
+
+    bool dependenciesValid() const;
 };

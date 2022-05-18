@@ -21,7 +21,7 @@ public:
     static bool isLeapYear(int year);
 
 private:
-    int day;
-    int month;
-    int year;
+//    int day;
+//    int month;
+//    int year;
 };
